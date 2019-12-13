@@ -37,8 +37,11 @@ public class Vehiculo {
 	}
 	@Override
 	public String toString() {
-		return "Vehiculo [marca=" + marca + ", modelo=" + modelo + ", motor=" + motor + ", almacenamiento="
-				+ almacenamiento + ", carroceria=" + carroceria + "]";
+		return "Marca: "+marca+"\n"
+				+"Modelo: "+modelo+"\n"
+				+"Motor: "+String.valueOf(motor.getCilindraje())+"\n"
+				+"Almacenamiento: "+almacenamiento+"\n"
+				+"Carroceria: "+carroceria.getCodigo();
 	}
 	
 

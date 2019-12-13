@@ -4,10 +4,9 @@ public class ChevroletSail extends VehiculoBuilder {
 	@Override
 	public void definirVehiculo() {
 		v= new Vehiculo();
-		v.setAlmacenamiento("1000 lb");
 		v.setMarca("Chevrolet");
 		v.setModelo("Sail");
-		
+		v.setAlmacenamiento("1000 lb");	
 	}
 
 	@Override

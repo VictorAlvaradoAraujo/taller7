@@ -1,19 +1,19 @@
 
 public class VehiculoDirector {
-	private VehiculoBuilder builder;
+	protected VehiculoBuilder builder;
 	
 	public VehiculoDirector(VehiculoBuilder builder) {
 		this.builder=builder;
 	}
 	
 	public void VehiculoBuider() {
-		builder.crearCarroceria();
-		builder.crearMotor();
-		builder.definirExtras();
 		builder.definirVehiculo();
+		builder.crearMotor();
+		builder.crearCarroceria();
+		builder.definirExtras();
 	}
 	
 	public Vehiculo getVehiculo() {
-		return builder.v;
+		return builder.getVehiculo();
 	}
 }
